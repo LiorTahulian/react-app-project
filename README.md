@@ -1,23 +1,57 @@
 # RUN4U
 
-![jogging-2343558_1280](https://github.com/LiorTahulian/react-app-project/assets/111439929/bd21425c-01a0-4082-93ef-d4e7c9601aec)
+![Running](https://github.com/LiorTahulian/react-app-project/assets/111439929/bd21425c-01a0-4082-93ef-d4e7c9601aec)
 
-#### The site provides a service for people who want to train and run with other people. The site also provides the possibility to save cards of people with whom you would like to train.
+## Description
 
-#### My motivation for building the site is that there is no platform for people who want to train collaboratively. That's why I built this site.
+The site provides a service for people who want to train and run with other people. The site also provides the possibility to save cards of people with whom you would like to train.
 
-#### I am a person who likes to train in a group and I have not found an adequate solution to the problem of training independently.
+My motivation for building the site is that there is no platform for people who want to train collaboratively. That's why I built this site.
 
-## Installation
+I am a person who likes to train in a group and I have not found an adequate solution to the problem of training independently.
 
-- bootstrap (npm i bootstrap)
-- bootstrap icons (npm i bootstrap-icons)
-- react-router-dom (npm i react-router-dom)
-- axsios (npm i axios)
-- formik (npm i formik)
-- Joi (npm i joi)
-- jwtDecode (npm i jwt-decode)
-- toastify (npm i react-toastify)
+## Technologies In Use
+
+- bootstrap
+- bootstrap icons
+- react-router-dom
+- axios
+- formik
+- Joi
+- jwtDecode
+- toastify
+
+## Server
+
+⚠️ Important !
+
+In order to use my project you have to install MongoDB. Then follow these steps:
+
+1. Open the terminal, go to "/server", and write
+```
+npm i
+```
+to get all the required libraries.
+
+2. Write
+```
+npm run dev
+```
+to connect the MongoDB with the server.
+
+## Front
+
+1. Open the terminal, go to "/front", and write
+```
+npm i
+```
+to get all the required libraries.
+
+2. Write
+```
+npm run start
+```
+to run the application.
 
 ## 🚀 How to run it ?
 
