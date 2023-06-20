@@ -20,6 +20,17 @@ I am a person who likes to train in a group and I have not found an adequate sol
 - Joi
 - jwtDecode
 - toastify
+- Google Fonts
+
+## 🚀 How to run it ?
+
+In order to install the project, you should clone the repo:
+
+```
+
+foo@bar:~$ git clone https://github.com/LiorTahulian/react-app-project.git
+
+```
 
 ## Server
 
@@ -53,16 +64,6 @@ npm run start
 ```
 to run the application.
 
-## 🚀 How to run it ?
-
-In order to install the project, you should clone the repo:
-
-```
-
-foo@bar:~$ git clone https://github.com/LiorTahulian/react-app-project.git
-
-```
-
 ## Usage
 
 In the beginning of the site, you will see a pictures.
@@ -93,3 +94,5 @@ As a connected customer you will see in the navbar a "Sign Out" button.
 #### Sign In
 
 At "Sign In" page you can connect to the system.
+
+## ENJOY!!!
