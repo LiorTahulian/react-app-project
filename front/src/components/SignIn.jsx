@@ -49,7 +49,7 @@ const SignIn = () => {
         <PageHeader
           title={
             <>
-              Sign In To GYM<i className="bi bi-4-circle"></i>U
+              Sign In To RUN<i className="bi bi-4-circle"></i>U
             </>
           }
           description="Connect with your account!!"
@@ -92,7 +92,7 @@ const SignIn = () => {
           <p className="text-center text-muted mt-2 mb-0">
             Need an account?{" "}
             <NavLink to="/sign-up" className="fw-bold text-body">
-              <u>Login here</u>
+              <u>Sign up here</u>
             </NavLink>
           </p>
         </form>

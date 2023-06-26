@@ -19,7 +19,7 @@ export const Navbar = () => {
     >
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-          GYM<i className="bi bi-4-circle"></i>U
+          RUN<i className="bi bi-4-circle"></i>U
         </NavLink>
         <button
           className="navbar-toggler"

@@ -59,10 +59,14 @@ const SignUp = () => {
   });
 
   return (
-    <div className="row d-flex justify-content-center align-items-center h-100 my-4">
-      <div className="col-12 col-md-9 col-lg-7 col-xl-6 border rounded">
+    <div className="row d-flex justify-content-center align-items-center h-100 my-5">
+      <div className="col-12 col-md-6 col-lg-6 col-xl-4 border rounded">
         <PageHeader
-          title="Sign Up with Real App"
+          title={
+            <>
+              Sign Up with RUN<i className="bi bi-4-circle"></i>U
+            </>
+          }
           description="Create your account !!!"
         />
 

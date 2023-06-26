@@ -1,123 +1,45 @@
-/* #innerMain{
-  background-image: url("https://cdn.pixabay.com/photo/2019/12/02/08/04/city-4667143_1280.jpg");
+#innerMain {
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/22/10/14/running-5077128_1280.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
   overflow-x: hidden;
 }
 
-#mainOverlay{
-width: 100%;
+#mainOverlay {
+  width: 100%;
 }
 
-html[data-bs-theme="light"] #mainOverlay{
+html[data-bs-theme="light"] #mainOverlay {
   background-color: #ffffff90;
 }
 
-html[data-bs-theme="dark"] #mainOverlay{
+html[data-bs-theme="dark"] #mainOverlay {
   background-color: #00000080;
 }
 
-html[data-bs-theme="dark"] .navbar-nav .nav-link.active{
-font-weight: 600;
+html[data-bs-theme="dark"] .navbar-nav .nav-link.active {
+  font-weight: 600;
 }
 
-html[data-bs-theme="dark"] p, html[data-bs-theme="dark"] span, html[data-bs-theme="dark"] i ,html[data-bs-theme="dark"] h1 ,html[data-bs-theme="dark"] h2,html[data-bs-theme="dark"] h3,html[data-bs-theme="dark"] h5,html[data-bs-theme="dark"] a,html[data-bs-theme="dark"] label {
+html[data-bs-theme="dark"] p,
+html[data-bs-theme="dark"] span,
+html[data-bs-theme="dark"] i,
+html[data-bs-theme="dark"] h1,
+html[data-bs-theme="dark"] h2,
+html[data-bs-theme="dark"] h3,
+html[data-bs-theme="dark"] h5,
+html[data-bs-theme="dark"] a,
+html[data-bs-theme="dark"] div,
+html[data-bs-theme="dark"] label {
   color: white;
 }
 
-import "react-toastify/dist/ReactToastify.css";
-
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
-import Home from "./components/home";
-import About from "./components/about";
-import SignIn from "./components/signIn";
-import SignUp from "./components/signUp";
-import SignOut from "./components/signOut";
-import ProtectedRoute from "./components/common/protectedRoute";
-import CardCreate from "./components/cardsCreate";
-import MyCards from "./components/myCards";
-import CardsDelete from "./components/cardsDelete";
-import CardsEdit from "./components/cardsEdit";
-import { ToastContainer, Zoom } from "react-toastify";
-import CardsView from "./components/cardsView";
-
-function App() {
-  return (
-    <div id="main" className="vh-100 d-flex flex-column">
-      <ToastContainer slide={Zoom} />
-      <header>
-        <Navbar />
-      </header>
-      <div id="innerMain" className="d-flex flex-fill flex-column">
-        <div
-          id="mainOverlay"
-          // style={{ backgroundColor: "#99CFE6" }}
-          className="p-2 flex-fill flex-column d-flex">
-          <Routes>
-            <Route path="/" element={<Home />} />
-
-            <Route path="about" element={<About />} />
-
-            <Route path="sign-in" element={<SignIn redirect="/" />} />
-
-            <Route path="sign-up" element={<SignUp redirect="/sign-in" />} />
-
-            <Route path="sign-out" element={<SignOut redirect="/" />} />
-
-            <Route
-              path="my-cards"
-              element={
-                <ProtectedRoute onlyBiz>
-                  <MyCards />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="/create-card"
-              element={
-                <ProtectedRoute onlyBiz>
-                  <CardCreate redirect="/my-cards" />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="my-cards/edit/:id"
-              element={
-                <ProtectedRoute onlyBiz>
-                  <CardsEdit />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="my-cards/delete/:id"
-              element={
-                <ProtectedRoute onlyBiz>
-                  <CardsDelete />
-                </ProtectedRoute>
-              }
-            />
-
-            <Route
-              path="my-cards/view/:id"
-              element={
-                <ProtectedRoute onlyBiz>
-                  <CardsView />
-                </ProtectedRoute>
-              }
-            />
-          </Routes>
-        </div>
-      </div>
-      <Footer />
-    </div>
-  );
+#growCard {
+  transition: all 0.2s ease-in-out;
 }
 
-export default App; */
+#growCard:hover {
+  transform: scale(1.1);
+  background-color: rgb(248, 185, 162);
+}

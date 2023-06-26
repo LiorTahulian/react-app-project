@@ -47,7 +47,7 @@ const CardsCreate = () => {
         }
 
         cardsService.createCard(body);
-        toast.success("Card Edited Successfully", {
+        toast.success("Card Created Successfully", {
           position: "top-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -108,7 +108,7 @@ const CardsCreate = () => {
             error={form.touched.bizImage && form.errors.bizImage}
           />
 
-          <div className="my-2">
+          <div className="my-2 d-flex justify-content-center">
             <button
               type="submit"
               disabled={!form.isValid}

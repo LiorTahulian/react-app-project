@@ -28,63 +28,65 @@ function App() {
         <Navbar />
       </header>
 
-      <div className="flex-fill container">
-        <Routes>
-          <Route path="/" element={<Home />} />
+      <div id="innerMain" className="flex-fill d-flex flex-column">
+        <div id="mainOverlay" className="p-2 flex-fill flex-column d-flex">
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-          <Route path="about" element={<About />} />
+            <Route path="about" element={<About />} />
 
-          <Route path="sign-in" element={<SignIn />} />
+            <Route path="sign-in" element={<SignIn />} />
 
-          <Route path="sign-up" element={<SignUp />} />
+            <Route path="sign-up" element={<SignUp />} />
 
-          <Route path="sign-out" element={<SignOut redirect="/" />} />
+            <Route path="sign-out" element={<SignOut redirect="/" />} />
 
-          <Route
-            path="my-cards"
-            element={
-              <ProtectedRoute onlyBiz>
-                <MyCards />
-              </ProtectedRoute>
-            }
-          />
+            <Route
+              path="my-cards"
+              element={
+                <ProtectedRoute onlyBiz>
+                  <MyCards />
+                </ProtectedRoute>
+              }
+            />
 
-          <Route
-            path="my-cards/delete/:id"
-            element={
-              <ProtectedRoute onlyBiz>
-                <CardsDelete />
-              </ProtectedRoute>
-            }
-          />
+            <Route
+              path="my-cards/delete/:id"
+              element={
+                <ProtectedRoute onlyBiz>
+                  <CardsDelete />
+                </ProtectedRoute>
+              }
+            />
 
-          <Route
-            path="my-cards/edit/:id"
-            element={
-              <ProtectedRoute onlyBiz>
-                <CardsEdit />
-              </ProtectedRoute>
-            }
-          />
+            <Route
+              path="my-cards/edit/:id"
+              element={
+                <ProtectedRoute onlyBiz>
+                  <CardsEdit />
+                </ProtectedRoute>
+              }
+            />
 
-          <Route
-            path="my-cards/view/:id"
-            element={
-              <ProtectedRoute onlyBiz>
-                <CardsView />
-              </ProtectedRoute>
-            }
-          />
+            <Route
+              path="my-cards/view/:id"
+              element={
+                <ProtectedRoute onlyBiz>
+                  <CardsView />
+                </ProtectedRoute>
+              }
+            />
 
-          <Route
-            path="create-card"
-            element={
-              <ProtectedRoute onlyBiz>
-                <CardsCreate />
-              </ProtectedRoute>
-            }
-          />
-        </Routes>
+            <Route
+              path="create-card"
+              element={
+                <ProtectedRoute onlyBiz>
+                  <CardsCreate />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+        </div>
       </div>
       <Footer />
     </div>
