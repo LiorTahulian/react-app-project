@@ -1,3 +1,7 @@
+* {
+  font-family: "Kalam", cursive;
+}
+
 #innerMain {
   background-image: url("https://cdn.pixabay.com/photo/2020/04/22/10/14/running-5077128_1280.jpg");
   background-position: center center;

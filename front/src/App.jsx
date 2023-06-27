@@ -18,10 +18,7 @@ import CardsView from "./components/cardsView";
 
 function App() {
   return (
-    <div
-      className="App d-flex flex-column min-vh-100"
-      style={{ fontFamily: "Kalam" }}
-    >
+    <div className="App d-flex flex-column min-vh-100">
       <ToastContainer />
 
       <header>
