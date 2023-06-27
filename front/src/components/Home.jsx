@@ -1,5 +1,6 @@
 import { useMyCards } from "../hooks/useMyCards";
 import Card from "./card";
+import CardForAll from "./cardForAll";
 import { PageHeader } from "./common/PageHeader";
 
 export function Home() {
@@ -22,64 +23,43 @@ export function Home() {
 
       <div className="row d-flex flex-wrap justify-content-around mt-3">
         {!cards.length ? (
-          <div
-            id="carouselExample"
-            className="carousel slide"
-            style={{ width: "900px", height: "500px" }}
-          >
-            <div
-              className="carousel-inner"
-              style={{ width: "900px", height: "500px" }}
-            >
-              <div className="carousel-item active">
-                <img
-                  src="https://cdn.triathlete.com/wp-content/uploads/2020/07/GettyImages-1162769889.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                  style={{ width: "900px", height: "500px" }}
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://cdn.pixabay.com/photo/2018/05/30/16/15/marathon-3441801_1280.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                  style={{ width: "900px", height: "500px" }}
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://www.westend61.de/images/0001593478pw/sports-people-running-together-during-sunny-day-UUF24256.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                  style={{ width: "900px", height: "500px" }}
-                />
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
+          <div className="d-flex justify-content-around mt-2">
+            <CardForAll
+              img={
+                "https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_1280.png"
+              }
+              name={"Avi"}
+              description={"Project manager"}
+              address={"Tel Aviv"}
+              phone={"058-9648238"}
+            />
+            <CardForAll
+              img={
+                "https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_1280.png"
+              }
+              name={"Avi"}
+              description={"Project manager"}
+              address={"Tel Aviv"}
+              phone={"058-9648238"}
+            />
+            <CardForAll
+              img={
+                "https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_1280.png"
+              }
+              name={"Avi"}
+              description={"Project manager"}
+              address={"Tel Aviv"}
+              phone={"058-9648238"}
+            />
+            <CardForAll
+              img={
+                "https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_1280.png"
+              }
+              name={"Avi"}
+              description={"Project manager"}
+              address={"Tel Aviv"}
+              phone={"058-9648238"}
+            />
           </div>
         ) : (
           cards.toReversed().map((card, index) => {

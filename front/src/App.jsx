@@ -15,6 +15,7 @@ import CardsEdit from "./components/cardsEdit";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CardsView from "./components/cardsView";
+import CardForAll from "./components/cardForAll";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
             <Route path="sign-up" element={<SignUp redirect="/" />} />
 
             <Route path="sign-out" element={<SignOut redirect="/" />} />
+
+            <Route path="card-for-all" element={<CardForAll />} />
 
             <Route
               path="my-cards"
