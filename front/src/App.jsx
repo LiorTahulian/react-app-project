@@ -35,9 +35,9 @@ function App() {
 
             <Route path="about" element={<About />} />
 
-            <Route path="sign-in" element={<SignIn />} />
+            <Route path="sign-in" element={<SignIn redirect="/" />} />
 
-            <Route path="sign-up" element={<SignUp />} />
+            <Route path="sign-up" element={<SignUp redirect="/" />} />
 
             <Route path="sign-out" element={<SignOut redirect="/" />} />
 

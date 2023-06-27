@@ -8,7 +8,7 @@ import formikValidateUsingJoi from "../utils/formikValidateUsingJoi";
 import Checkbox from "./common/Checkbox";
 import { useAuth } from "../context/auth.context";
 
-const SignUp = () => {
+const SignUp = ({ redirect = "/" }) => {
   const [error, setError] = useState();
 
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ const SignUp = () => {
       try {
         await createUser(values);
         await login({ email: values.email, password: values.password });
-        navigate("/");
+        navigate(redirect);
       } catch ({ response }) {
         if (response && response.status === 400) {
           setError(response.data);

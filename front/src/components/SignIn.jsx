@@ -7,7 +7,7 @@ import Input from "./common/Input";
 import formikValidateUsingJoi from "../utils/formikValidateUsingJoi";
 import { useAuth } from "../context/auth.context";
 
-const SignIn = () => {
+const SignIn = ({ redirect = "/" }) => {
   const [error, setError] = useState();
 
   const { login, user } = useAuth();
@@ -32,7 +32,7 @@ const SignIn = () => {
     async onSubmit(values) {
       try {
         await login(values);
-        navigate("/");
+        navigate(redirect);
       } catch ({ response }) {
         if (response && response.status === 400) {
           setError(response.data);
