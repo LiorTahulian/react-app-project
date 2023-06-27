@@ -5,7 +5,7 @@ const CardForAll = ({ img, name, description, address, phone }) => {
         src={img}
         className="card-img-top"
         alt={img}
-        style={{ height: "250px", objectFit: "cover" }}
+        style={{ height: "280px", objectFit: "cover", padding: "10px" }}
       />
       <div className="card-body">
         <h5 className="card-title text-center">{name}</h5>

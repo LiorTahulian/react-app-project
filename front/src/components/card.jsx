@@ -9,7 +9,7 @@ const Card = ({
         src={bizImage}
         className="card-img-top"
         alt={bizName}
-        style={{ height: "280px", objectFit: "cover" }}
+        style={{ height: "280px", objectFit: "cover", padding: "10px" }}
       />
       <div className="card-body">
         <h5 className="card-title text-center">{bizName}</h5>
