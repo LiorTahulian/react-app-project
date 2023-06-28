@@ -23,7 +23,7 @@ export function Home() {
 
       <div className="row d-flex flex-wrap justify-content-around mt-3">
         {!cards.length ? (
-          <div className="d-flex justify-content-around mt-2">
+          <div className="d-flex flex-wrap justify-content-around mt-2">
             <CardForAll
               img={
                 "https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_1280.png"
